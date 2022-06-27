@@ -15,5 +15,9 @@ puts Store.count
 
 # pp Store.where(mens_apparel: true)
 
+Store.all.each do |store|
+  puts "The #{store.name} store makes $#{store.annual_revenue} anually" 
+end
+
 pp Store.where("annual_revenue < 1000000", womens_apparel: true)
 
