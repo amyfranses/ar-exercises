@@ -25,8 +25,7 @@ class Store <  ActiveRecord::Base
       errors.add(:mens_apparel, "You cannot create a store without men's or women's apparel")
   end
 end
-  # validate :apparel_type, mens_apparel: true
-  #if !, inclusion: [true, false]
+  
 end
 
 puts "Please add a store"
